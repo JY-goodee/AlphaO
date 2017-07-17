@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC 
+"-//mybatis.org//DTD config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="logic.Item" alias="Item"/>
+		<typeAlias type="logic.Member" alias="Member"/>
+		<typeAlias type="logic.Board" alias="Board"/>
+		<typeAlias type="logic.Guild" alias="Guild"/>
+		<typeAlias type="logic.Room" alias="Room"/>
+		<typeAlias type="logic.Comment1" alias="Comment1"/>
+	</typeAliases>
+	<mappers>
+		<mapper resource="dao/mapper/Item.xml"/>
+		<mapper resource="dao/mapper/Member.xml"/>
+		<mapper resource="dao/mapper/Board.xml"/>
+		<mapper resource="dao/mapper/Guild.xml"/>
+		<mapper resource="dao/mapper/Room.xml"/>
+		<mapper resource="dao/mapper/Comment1.xml"/>
+	</mappers>
+</configuration>
