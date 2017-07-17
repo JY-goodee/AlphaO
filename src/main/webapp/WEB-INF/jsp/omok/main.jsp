@@ -64,7 +64,7 @@
 		padding:10px; 
 		margin: 0 10px 10px -10px;
 		overflow: hidden;
-		height: 25%;
+		height: 40%;
 		display: inline;
 	}
 	
@@ -111,7 +111,7 @@
 		float: right;
 		bottom : 7%;
 		position: absolute;
-		height: 25%;
+		height: 40%;
 		right: 20px;
 		width : 20%;
 		margin-left: 10px;
@@ -199,7 +199,7 @@
 		</table>
 	</div>
 	
-	<!-- 우측 중간 랭킹순위 -->
+<!-- 우측 중간에 랭킹부분 넣을지말지 고민중!
 	<div class="box_right_middle">
 			<ul class="tab">
 				<li class="current" data-tab="tab1"><a href="#">랭킹 순위</a></li>
@@ -213,7 +213,9 @@
 			<div id="tab2" class="tabcontent">
 				<h6>Portfolio</h6>
 			</div>
-	</div>
+	</div> 
+
+-->
 	
 	
 	<!-- 우측 하단 채팅창 -->
