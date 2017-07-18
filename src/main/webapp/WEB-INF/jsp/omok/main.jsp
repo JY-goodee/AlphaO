@@ -253,7 +253,7 @@
 	<div class="box_left_bottom">
 		 
 		 <input type="button" value="방 만들기" style="height: 100%; width:10%;">
-		 <input type="button" value="입장하기" style="height: 100%; width:10%;">
+		 <input type="button"  onclick="game()"value="입장하기" style="height: 100%; width:10%;">
 		 
 		 <input type="button" value="진행방 보기" style="height: 100%; float:right;  width:10%; margin-left:10px">
 		 <input type="button" value="빈방 보기" style="height: 100%; float:right; width:10%; margin-left:10px">
@@ -272,6 +272,12 @@
 				$('#' + activeTab).addClass('current');
 			})
 		});
+</script>
+
+<script>
+ function game(){
+	 location.href = "../item/shop.om";
+ }
 </script>
 </body>
 </html>

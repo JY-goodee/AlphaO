@@ -46,9 +46,6 @@ xsi:schemaLocation=
  </bean>
  
 
- <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver"
- 	   p:maxUploadSize="104857600"
- 	   p:maxInMemorySize="104857600"/>
 
  <bean id="exceptionHandler" class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
  	<property name="exceptionMappings">
@@ -57,5 +54,17 @@ xsi:schemaLocation=
  	</property> 
  </bean>  -->
  
+ <!-- Mybatis 관련 설정 -->
+
+<bean class="org.springframework.web.multipart.commons.CommonsMultipartResolver" id="multipartResolver" p:maxInMemorySize="104857600" p:maxUploadSize="104857600"/>
+
+<bean class="org.mybatis.spring.SqlSessionFactoryBean" id="sqlSessionFactory">
+ <property name="dataSource" ref="dataSource"/>
+ <property name="configLocation" value="classpath:mybatis-config.xml"/>
+</bean>
+
+<bean class="org.mybatis.spring.SqlSessionTemplate" id="sqlSessionTemplate">
+ <constructor-arg ref="sqlSessionFactory"/>
+</bean>
 </beans>
 

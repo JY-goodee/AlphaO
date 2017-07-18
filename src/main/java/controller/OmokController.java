@@ -12,4 +12,11 @@ public class OmokController {
 		ModelAndView mav = new ModelAndView();
 		return mav;
 	}
+	
+	@RequestMapping("omok/omok")
+	public ModelAndView omok(){
+		ModelAndView mav = new ModelAndView();
+		return mav;
+	}
+	
 }
